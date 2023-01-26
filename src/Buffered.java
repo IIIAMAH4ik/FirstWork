@@ -7,12 +7,11 @@ public class Buffered {
             throws IOException {
         BufferedReader reader = new BufferedReader(
                 new InputStreamReader(System.in));
-        String ticketPrc = reader.readLine();
+        String moneyOtt = reader.readLine();
 
-        int ticket = Integer.parseInt(ticketPrc);
-        int miles = ticket / 20;
+        int money = Integer.parseInt(moneyOtt);
 
-        System.out.println("Кол-во милей - " + miles);
-
+        System.out.println("Кол-во бонусов "+ (money / 100));
+        System.out.println("Сумма с добавлением бонусов "+ (money + money / 100));
     }
-}
+} 
